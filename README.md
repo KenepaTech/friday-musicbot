@@ -1,8 +1,5 @@
-# Discord Music bot
+# Discord Music bot for kenepa
 
-A simple discord bot that helps you manage your server by providing useful commands like playing music or deleting text messages.
-
-You can find the tutorial about building a discord music bot [here](https://gabrieltanner.org/blog/dicord-music-bot). 
 
 ## Table of content
 
@@ -10,12 +7,11 @@ You can find the tutorial about building a discord music bot [here](https://gabr
 * [Getting started](#getting-started)
 * [Common errors](#common-errors)
 * [Contributing](#contributing)
-* [Author](#author)
 * [License](#license)
 
 ## Requirements
 
-- [Node](https://nodejs.org/en/) - Version 16 or higher
+- [Node](https://nodejs.org/en/) - MUST BE Version 16 or higher!!! 
 - [NPM](https://www.npmjs.com/)
 - [FFMPEG](https://www.ffmpeg.org/)
 - [Docker](https://www.docker.com/) (optional)
@@ -121,18 +117,6 @@ npm install ytdl-core@latest
 ### FFMPEG is not installed on the machine running the bot
 
 The `play` command requires FFMPEG to be installed on the machine that is running the bot. You can download it on the official [FFMPEG website](https://www.ffmpeg.org/). Note: This isn't relevant if you use the Dockerfile because it will install FFMPEG inside of the container.
-
-## Contributing
-
-You are welcome to contribute by submitting a Pull Request to the repository.
-
-## Author
-
-[Gabriel Tanner](https://gabrieltanner.org/)
-
-## Support me
-
-<a href="https://www.buymeacoffee.com/gabrieltanner" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 ## License
 
