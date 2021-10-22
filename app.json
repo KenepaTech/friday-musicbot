@@ -1,7 +1,19 @@
 {
-    "name": "Friday, Kenepa's music bot",
-    "description": "This app does one little thing, and does it well.",
-    "repository": "https://github.com/TannerGabriel/discord-bot",
-    "logo": "https://node-js-sample.herokuapp.com/node.png",
-    "keywords": ["node", "express", "static"]
-  }
+  "name": "Friday Musicbot",
+  "description": "TODO: Add a short description about Friday Musicbot",
+  "keywords": [
+    "small",
+    "sharp",
+    "tool"
+  ],
+    "buildpacks": [
+      {
+        "url": "https://github.com/interconnectit/heroku-buildpack-ffmpeg.git"
+      },
+      {
+        "url": "heroku/nodejs"
+      }
+    ],
+  "addons": [],
+  "env": {}
+}
