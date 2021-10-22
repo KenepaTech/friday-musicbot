@@ -1,7 +1,7 @@
 # Discord Music bot for kenepa
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TannerGabriel/discord-bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/KenepaTech/friday-musicbot)
 
 ## Table of content
 
