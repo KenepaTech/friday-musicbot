@@ -1,5 +1,7 @@
 {
   "name": "Friday Musicbot",
+  "repository": "https://github.com/heroku/node-js-getting-started",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
   "description": "TODO: Add a short description about Friday Musicbot",
   "keywords": [
     "small",
