@@ -1,7 +1,7 @@
 {
     "name": "Friday, Kenepa's music bot",
     "description": "This app does one little thing, and does it well.",
-    "repository": "https://github.com/KenepaTech/friday-musicbot",
+    "repository": "https://github.com/TannerGabriel/discord-bot",
     "logo": "https://node-js-sample.herokuapp.com/node.png",
     "keywords": [
       "nodejs",
