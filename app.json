@@ -1,8 +1,8 @@
 {
   "name": "Friday Musicbot",
   "repository": "https://github.com/TannerGabriel/discord-bot",
-  "logo": "https://node-js-sample.herokuapp.com/node.png",
-  "description": "TODO: Add a short description about Friday Musicbot",
+  "logo": "https://www.herokucdn.com/deploy/button.svg",
+  "description": "Kenepa's discord music bot",
   "keywords": [
     "small",
     "sharp",
