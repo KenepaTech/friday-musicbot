@@ -114,5 +114,6 @@ client.on('interactionCreate', async interaction => {
   }
 });
 
-client.login(config.token);
+// client.login("ODg4NTIzOTIwODYzNTU1NjQ0.YUT8Yg.2KWr5Mu3Ysgwkc4Ctv0L3mw4bUM");
+client.login(process.env.token);
 
