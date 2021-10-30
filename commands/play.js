@@ -33,7 +33,7 @@ module.exports = {
 
       await interaction.deferReply();
 
-      const query = interaction.options.get('query').value;
+      const query = interaction.options.get('query').value + " lyrics";
       const searchResult = await player
         .search(query, {
           requestedBy: interaction.user,
