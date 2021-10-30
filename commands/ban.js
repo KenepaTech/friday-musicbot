@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'friday',
+  name: 'ban',
   description: 'Send gif',
   options: [
     {

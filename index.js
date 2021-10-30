@@ -6,7 +6,7 @@ const {Player} = require('discord-player');
 
 const client = new Client();
 client.commands = new Discord.Collection();
-
+const cron = require('cron');
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
@@ -62,6 +62,24 @@ client.once('disconnect', () => {
   console.log('Disconnect!');
 });
 
+client.once("ready", () => {
+  console.log(`Online as ${client.user.tag}`);
+    
+  let scheduledMessage = new cron.CronJob('00 17 * * 5 ', () => {
+  // let scheduledMessage = new cron.CronJob('* * * * * ', () => {
+                    
+  // This runs friday at 15, you can do anything you want
+  // Specifing your guild (server) and your channel
+     const guild = client.guilds.cache.get('579799154449186865');
+     const channel = guild.channels.cache.get('579799154449186868');
+     channel.send('It\'s friday bitches');
+     client.channels.cache.get("579799154449186868").send("https://media.giphy.com/media/26tP7Lltx6BaMhKfK/giphy.gif")
+    });
+        
+    // When you want to start it, use:
+    scheduledMessage.start()
+});
+
 client.on('messageCreate', async message => {
   if (message.author.bot || !message.guild) return;
   if (!client.application?.owner) await client.application?.fetch();
@@ -96,6 +114,5 @@ client.on('interactionCreate', async interaction => {
   }
 });
 
-client.login(process.env.token);
-// client.login(config.token);
+client.login(config.token);
 
