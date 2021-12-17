@@ -44,6 +44,8 @@ player.on('channelEmpty', queue => {
 
 player.on('queueEnd', queue => {
   queue.metadata.send('✅ | Queue finished!');
+  setTimeout(() => { console.log("Short break before leaving queue!"); }, 3000);
+
 });
 
 client.once('ready', async () => {
@@ -73,8 +75,8 @@ client.once("ready", () => {
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
 //      channel.send('It\'s friday bitches');
-     channel.send('Woop Woop');
-     client.channels.cache.get("579799154449186868").send("https://i.giphy.com/media/AOgwrHx4o49v2ZisoR/giphy.webp")
+     channel.send('Bing Bong');
+     client.channels.cache.get("579799154449186868").send("https://media0.giphy.com/media/MDxJnL1GGnuALMFu2e/giphy.gif?cid=ecf05e47x7f1gdtam5egusalu4j56llynav8lz5tdhwp4tfs&rid=giphy.gif&ct=g")
     });
         
     // When you want to start it, use:
