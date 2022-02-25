@@ -76,7 +76,7 @@ client.once("ready", () => {
      const channel = guild.channels.cache.get('579799154449186868');
 //      channel.send('It\'s friday bitches');
    //  channel.send('Its the fucking weekend hallelujah💃');
-     client.channels.cache.get("579799154449186868").send("https://i.giphy.com/media/3NUEWRGjmbslDQU3J0/giphy.webp")
+     client.channels.cache.get("579799154449186868").send("https://c.tenor.com/TVnoXC3GsVgAAAAd/friday-dance-as-soom-as-i-get-off-from-work-today.gif")
     });
         
     // When you want to start it, use:
