@@ -75,8 +75,8 @@ client.once("ready", () => {
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
 //      channel.send('It\'s friday bitches');
-   //  channel.send('Its the fucking weekend hallelujah💃');
-     client.channels.cache.get("579799154449186868").send("https://c.tenor.com/TVnoXC3GsVgAAAAd/friday-dance-as-soom-as-i-get-off-from-work-today.gif")
+     channel.send('💃');
+     client.channels.cache.get("579799154449186868").send("https://c.tenor.com/iGi8xapVELsAAAAC/happydance-excited.gif")
     });
         
     // When you want to start it, use:
