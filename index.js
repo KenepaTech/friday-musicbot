@@ -74,7 +74,7 @@ client.once("ready", () => {
   // Specifing your guild (server) and your channel
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
-//      channel.send('It\'s friday bitches');
+//      channel.send('Grab the Wines!!');
      channel.send('🌞');
      client.channels.cache.get("579799154449186868").send("https://media2.giphy.com/media/1wQy1qcdATLL9vaAn6/giphy.gif?cid=ecf05e47449jlm6piv8r2azz6la739jastzsn9ci78eg6lxi&rid=giphy.gif&ct=g")
     });
