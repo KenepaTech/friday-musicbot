@@ -76,7 +76,7 @@ client.once("ready", () => {
      const channel = guild.channels.cache.get('579799154449186868');
 //      channel.send('It\'s friday bitches');
      channel.send('🌞');
-     client.channels.cache.get("579799154449186868").send("https://scontent-lga3-2.xx.fbcdn.net/v/t1.6435-9/139240294_10165174890280160_1257008750922299393_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=ukBI2B0QfVgAX-17uzC&_nc_ht=scontent-lga3-2.xx&oh=00_AT84RKwbrk4JXaOQd2cbCpzE7tuEIhHE2_kktFaY6stbLw&oe=62523646")
+     client.channels.cache.get("579799154449186868").send("https://media2.giphy.com/media/1wQy1qcdATLL9vaAn6/giphy.gif?cid=ecf05e47449jlm6piv8r2azz6la739jastzsn9ci78eg6lxi&rid=giphy.gif&ct=g")
     });
         
     // When you want to start it, use:
