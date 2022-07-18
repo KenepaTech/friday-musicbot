@@ -23,7 +23,7 @@ module.exports = {
     const userinfo = client.users.cache.get(member);
   // client.channels.cache.get("579799154449186868").send("https://media.giphy.com/media/26tP7Lltx6BaMhKfK/giphy.gif")
     
-    client.channels.cache.get("579799154449186868").send("https://i.pinimg.com/originals/f1/ea/82/f1ea82decb44a8fb291fecbd6bba04f1.png")
+    client.channels.cache.get("579799154449186868").send("https://media3.giphy.com/media/uneOyM1p6VxeMfFxhX/giphy.gif?cid=ecf05e47z7lqy4cm1hf3nie8v788f41iyw9o0upyye97ivet&rid=giphy.gif&ct=g")
   //   let ballembed = new Discord.MessageEmbed()
   // .attachFiles("https://media.giphy.com/media/JrkbVRQA5adwle1ykt/giphy.gif")
   //         message.channel.send(ballembed);
