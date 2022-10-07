@@ -75,8 +75,8 @@ client.once("ready", () => {
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
 //      channel.send('Grab the Wines!!');
-     channel.send("Party time! Felis wikènt cabrones🤪");
-     client.channels.cache.get("579799154449186868").send("https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif")
+     channel.send("FINALLY🐱‍🏍");
+     client.channels.cache.get("579799154449186868").send("https://media.giphy.com/media/kfXKerAin4UauE9ZEA/giphy-downsized-large.gif")
     });
         
     // When you want to start it, use:
