@@ -68,6 +68,8 @@ module.exports = {
       });
       searchResult.playlist ? queue.addTracks(searchResult.tracks) : queue.addTrack(searchResult.tracks[0]);
       if (!queue.playing) await queue.play();
+      setTimeout(() => { console.log("World!"); }, 3000);
+
     } catch (error) {
       console.log(error);
       interaction.followUp({
