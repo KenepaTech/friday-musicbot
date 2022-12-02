@@ -43,7 +43,10 @@ player.on('channelEmpty', queue => {
 });
 
 player.on('queueEnd', queue => {
+  setTimeout(() => { console.log("Short break before leaving queue!"); }, 5000);
   queue.metadata.send('✅ | Queue finished!');
+
+
 });
 
 client.once('ready', async () => {
@@ -72,8 +75,9 @@ client.once("ready", () => {
   // Specifing your guild (server) and your channel
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
-     channel.send('It\'s friday bitches');
-     client.channels.cache.get("579799154449186868").send("https://media.giphy.com/media/393kszFi2PuCEopURN/giphy.gif")
+//      channel.send('It\'s friday bitches');
+     channel.send('Bing Bong');
+     client.channels.cache.get("579799154449186868").send("https://media0.giphy.com/media/MDxJnL1GGnuALMFu2e/giphy.gif?cid=ecf05e47x7f1gdtam5egusalu4j56llynav8lz5tdhwp4tfs&rid=giphy.gif&ct=g")
     });
         
     // When you want to start it, use:
