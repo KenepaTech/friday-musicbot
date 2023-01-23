@@ -1,7 +1,6 @@
 # Discord Music bot for kenepa
 
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/KenepaTech/friday-musicbot)
+[![Docker Image CI](https://github.com/KenepaTech/friday-musicbot/actions/workflows/docker-image.yml/badge.svg)](https://github.com/KenepaTech/friday-musicbot/actions/workflows/docker-image.yml)
 
 ## Table of content
 
