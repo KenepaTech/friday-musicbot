@@ -30,7 +30,7 @@ jobs:
        run: docker build . --file Dockerfile --tag rocheandley/friday:$(date +%s_)
        
      - name: Docker Push
-       run: docker push rocheandley/friday
+       run: docker push rocheandley/friday:$(date +%s_)
       
       
 
