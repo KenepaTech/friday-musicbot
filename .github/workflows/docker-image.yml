@@ -42,7 +42,8 @@ jobs:
          script: |
            whoami
            echo "Jullee owes me a house"
-           docker pull
+           docker pull rocheandley/friday:$(date +%d)
+           docker stop friday
            
        
        
