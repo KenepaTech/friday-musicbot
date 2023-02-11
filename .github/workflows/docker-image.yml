@@ -31,6 +31,19 @@ jobs:
        
      - name: Docker Push
        run: docker push rocheandley/friday:$(date +%d)
+       
+     - name: Deploy
+       uses: appleboy/ssh-action@v0.1.7
+       with: 
+         host: ${{secrets.SSH_HOST}}
+         key: ${{secrets.SSH_KEY}}
+         username: ${{ secrets.SSH_USERNAME}}
+         
+         script: |
+           docker pull
+           echo "Jullee owes me a house"
+       
+       
       
       
 
