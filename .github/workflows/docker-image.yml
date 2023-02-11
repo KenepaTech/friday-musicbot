@@ -40,8 +40,10 @@ jobs:
          username: ${{ secrets.SSH_USERNAME}}
          
          script: |
-           docker pull
+           whoami
            echo "Jullee owes me a house"
+           docker pull
+           
        
        
       
