@@ -74,7 +74,7 @@ client.once("ready", () => {
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
      channel.send("Enjoy the weekend!!!😎☀️");
-     channel.send("https://media.giphy.com/media/jOyqJX2xsdpFj6sM9L/giphy.gif")},
+     channel.send("https://media.giphy.com/media/jOyqJX2xsdpFj6sM9L/giphy.gif");
           null,true,
           "Europe/Amsterdam");
     });
