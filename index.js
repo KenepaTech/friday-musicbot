@@ -74,10 +74,9 @@ client.once("ready", () => {
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
      channel.send("Enjoy the weekend!!!😎☀️");
-     channel.send("https://media.giphy.com/media/jOyqJX2xsdpFj6sM9L/giphy.gif");
+     channel.send("https://media.giphy.com/media/jOyqJX2xsdpFj6sM9L/giphy.gif")},
           null,true,
           "Europe/Amsterdam");
-    });
     // When you want to start it, use:
     scheduledMessage.start()
 });
@@ -117,5 +116,5 @@ client.on('interactionCreate', async interaction => {
 });
 
 // client.login("ODg4NTIzOTIwODYzNTU1NjQ0.YUT8Yg.o3QMgkbpyBoyZW8Uk9BLbDWF9-c");
-console.log(process.env.DTOKEN);
+// console.log(process.env.DTOKEN);
 client.login(process.env.DTOKEN);
