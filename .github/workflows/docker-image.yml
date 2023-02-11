@@ -42,8 +42,10 @@ jobs:
          script: |
            whoami
            echo "Jullee owes me a house"
+           docker rm friday -f
            docker pull rocheandley/friday:$(date +%d)
-           docker stop friday
+           docker run -d --name friday -v --always /etc/localtime:/etc/localtime:ro rocheandley/friday:$(date +%d) 
+           
            
        
        
