@@ -16,8 +16,9 @@ jobs:
     - uses: actions/checkout@v3
     - name: docker login
       env:
-        DOCKER_USER: ${{secrets.DOCKER_USERNAME}}
-        DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}    
+        DOCKER_USER: ${{PSWD.USERNAME}}
+        DOCKER_PASSWORD: ${{PSWD.PASSWORD}}   
+       
       run: | 
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the DOcker image
