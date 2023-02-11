@@ -43,7 +43,7 @@ jobs:
            whoami
            docker rm friday -f
            docker pull rocheandley/friday:$(date +%d)
-           docker run -d --restart unless-stopped -e DTOKEN=${{secrets.DTOKEN}} --name friday rocheandley/friday:$(date +%d) 
+           docker run -d --restart unless-stopped -e DTOKEN='${{secrets.DTOKEN}}' --name friday rocheandley/friday:$(date +%d) 
            
            
        
