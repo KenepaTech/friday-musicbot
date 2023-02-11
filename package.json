@@ -8,7 +8,7 @@
     "node": "16.9.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha index.js",
     "lint": "prettier --write \"**/*.js\""
   },
   "keywords": [
@@ -29,6 +29,7 @@
     "fluent-ffmpeg": "^2.1.2",
     "node": "16.6.1",
     "node-cron": "^3.0.0",
+    "mocha": "^10.2.0",
     "ytdl-core": "^4.9.1"
   },
   "devDependencies": {
