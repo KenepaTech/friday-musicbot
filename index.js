@@ -123,4 +123,4 @@ client.on('interactionCreate', async interaction => {
 
 // client.login("ODg4NTIzOTIwODYzNTU1NjQ0.YUT8Yg.o3QMgkbpyBoyZW8Uk9BLbDWF9-c");
 console.log(process.env.DTOKEN);
-//client.login(process.env.DISCORD_TOKEN);
+client.login(process.env.DTOKEN);
