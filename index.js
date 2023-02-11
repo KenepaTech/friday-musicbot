@@ -70,19 +70,14 @@ client.once('disconnect', () => {
 
 client.once("ready", () => {
   console.log(`Online as ${client.user.tag}`);
-    
-  let scheduledMessage = new cron.CronJob('00 17 * * 5 ', () => {
-  // let scheduledMessage = new cron.CronJob('* * * * * ', () => {
-                    
-  // This runs friday at 15, you can do anything you want
-  // Specifing your guild (server) and your channel
+     let scheduledMessage = new cron.CronJob('00 17 * * 5 ', () => {
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
-//      channel.send('Grab the Wines!!');
      channel.send("Enjoy the weekend!!!😎☀️");
-     client.channels.cache.get("579799154449186868").send("https://media.giphy.com/media/jOyqJX2xsdpFj6sM9L/giphy.gif")
+     channel.send("https://media.giphy.com/media/jOyqJX2xsdpFj6sM9L/giphy.gif")},
+          null,true,
+          "Europe/Amsterdam");
     });
-        
     // When you want to start it, use:
     scheduledMessage.start()
 });
