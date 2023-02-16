@@ -1,24 +1,16 @@
-FROM node:16.10.0 as base
+FROM node:16.10.0
 
 WORKDIR /usr/src/app
 
 RUN apt-get update || : && apt-get install python -y
 RUN apt-get install ffmpeg -y
+
 COPY package*.json ./
 
-
-FROM base as test
 RUN npm ci
+
 COPY . .
-RUN npm test
 
-
-FROM test as prod
-RUN npm ci
-COPY . .
-CMD [ "node", "server.js" ]
-
-
-
+CMD [ "node", "index.js" ]
 
 
