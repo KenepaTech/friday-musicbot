@@ -13,7 +13,7 @@ COPY . .
 RUN npm test
 
 
-FROM base as prod
+FROM test as prod
 RUN npm ci
 COPY . .
 CMD [ "node", "server.js" ]
