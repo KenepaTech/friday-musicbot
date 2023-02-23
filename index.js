@@ -67,7 +67,7 @@ client.once('reconnecting', () => {
 client.once('disconnect', () => {
   console.log('Disconnect!');
 });
-
+// nerd
 client.once("ready", () => {
   console.log(`Online as ${client.user.tag}`);
      let scheduledMessage = new cron.CronJob('00 17 * * 5 ', () => {
