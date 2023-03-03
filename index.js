@@ -71,7 +71,7 @@ client.once('disconnect', () => {
 // nerd
 client.once("ready", () => {
   console.log(`Online as ${client.user.tag}`);
-     let scheduledMessage = new cron.CronJob('00 17 * * 5 ', () => {
+     let scheduledMessage = new cron.CronJob('10 17 * * 5 ', () => {
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
      channel.send("Felis weekend shonnan!😎👾");
