@@ -5,11 +5,12 @@ const Discord = require('discord.js');
 const Client = require('./client/Client');
 const config = require('./config.json');
 const {Player} = require('discord-player');
-
+const { ActivityType } = require('discord.js');
+const cron = require('cron');
 
 const client = new Client();
 client.commands = new Discord.Collection();
-const cron = require('cron');
+
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
@@ -70,10 +71,6 @@ player.on('queueEnd', queue => {
 
 client.once('ready', async () => {
   console.log('Ready!');
-});
-
-client.on('ready', function() {
-  client.user.setActivity(config.activity, { type: config.activityType });
 });
 
 
