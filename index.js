@@ -76,6 +76,14 @@ client.on('ready', function() {
   client.user.setActivity(config.activity, { type: config.activityType });
 });
 
+
+client.on('ready', function() {
+  client.user.setPresence({
+    activities: [{ name: config.activity, type: Number(config.activityType) }],
+    status: Discord.PresenceUpdateStatus.Online,
+  });
+});
+
 client.once('reconnecting', () => {
   console.log('Reconnecting!');
 });
