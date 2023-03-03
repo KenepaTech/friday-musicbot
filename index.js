@@ -21,6 +21,7 @@ console.log(client.commands);
 
 const player = new Player(client);
 
+// change here 
 player.on('connectionCreate', (queue) => {
     queue.connection.voiceConnection.on('stateChange', (oldState, newState) => {
       const oldNetworking = Reflect.get(oldState, 'networking');
@@ -35,6 +36,7 @@ player.on('connectionCreate', (queue) => {
       newNetworking?.on('stateChange', networkStateChangeHandler);
     });
 });
+// change here 
 
 player.on('error', (queue, error) => {
   console.log(`[${queue.guild.name}] Error emitted from the queue: ${error.message}`);
