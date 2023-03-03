@@ -1,4 +1,4 @@
 {
     "activityType": "0",
-    "activity": `▶ | Playing: **${track.title}**  "
+    "activity": `▶ | Playing: **${track.title}** !`
 }
