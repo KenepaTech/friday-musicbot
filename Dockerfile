@@ -3,8 +3,6 @@ FROM node:18 AS build
  COPY . /app
  COPY --from=mwader/static-ffmpeg:5.1.2 /ffmpeg /ffmpeg
  RUN npm install --package-lock-only
- RUN npm i @discordjs/opus
- RUN npm i node-opus
  RUN npm ci --omit=dev 
  RUN apt update && \
      apt install -y upx && \
