@@ -1,17 +1,17 @@
-# FROM node:16.9.1
+FROM node:16.9.1
 
-# WORKDIR /usr/src/app
+WORKDIR /usr/src/app
 
-# RUN apt-get update || : && apt-get install python -y
-# RUN apt-get install ffmpeg -y
+RUN apt-get update || : && apt-get install python -y
+RUN apt-get install ffmpeg -y
 
-# COPY package*.json ./
+COPY package*.json ./
 
-# RUN npm ci
+RUN npm ci
 
-# COPY . .
+COPY . .
 
-# CMD [ "node", "index.js" ]
+CMD [ "node", "index.js" ]
 
 
 # FROM node:18 AS build
