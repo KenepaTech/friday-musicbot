@@ -30,7 +30,9 @@
     "node": "16.6.1",
     "node-cron": "^3.0.0",
     "mocha": "^10.2.0",
+    "prism-media": "^1.3.4",
     "ytdl-core": "^4.11.2"
+    
   },
   "devDependencies": {
     "prettier": "2.4.1"
