@@ -1,7 +1,5 @@
 const Discord = require('discord.js');
-const {
-    QueryType
-} = require('discord-player');
+const {QueryType} = require('discord-player');
 
 const axios = require('axios')
 module.exports = {
@@ -31,7 +29,7 @@ module.exports = {
                 cityName,
                 country
             ) =>
-            new Discord.MessageEmbed()
+            new Discord.EmbedBuilder()
             .setColor('#0099ff')
             .setTitle(`It is ${temp}\u00B0 C in ${cityName}, ${country}`)
             .addField(`Maximum Temperature:`, `${maxTemp}\u00B0 C`, true)
