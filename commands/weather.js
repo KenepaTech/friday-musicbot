@@ -32,12 +32,12 @@ module.exports = {
             new Discord.EmbedBuilder()
             .setColor('#0099ff')
             .setTitle(`It is ${temp}\u00B0 C in ${cityName}, ${country}`)
-            .addField(`Maximum Temperature:`, `${maxTemp}\u00B0 C`, true)
-            .addField(`Minimum Temperature:`, `${minTemp}\u00B0 C`, true)
-            .addField(`Humidity:`, `${humidity} %`, true)
-            .addField(`Wind Speed:`, `${wind} m/s`, true)
-            .addField(`Pressure:`, `${pressure} hpa`, true)
-            .addField(`Cloudiness:`, `${cloudness}`, true)
+            .addFields(`Maximum Temperature:`, `${maxTemp}\u00B0 C`, true)
+            .addFields(`Minimum Temperature:`, `${minTemp}\u00B0 C`, true)
+            .addFields(`Humidity:`, `${humidity} %`, true)
+            .addFields(`Wind Speed:`, `${wind} m/s`, true)
+            .addFields(`Pressure:`, `${pressure} hpa`, true)
+            .addFields(`Cloudiness:`, `${cloudness}`, true)
             .setFooter('Made With 💖 by @kenepatech');
 
 
