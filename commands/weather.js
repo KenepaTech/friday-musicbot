@@ -28,21 +28,20 @@ module.exports = {
                 icon,
                 cityName,
                 country
-            ) =>
-            new Discord.EmbedBuilder()
-            .setColor('#0099ff')
-            .setTitle(`It is ${temp}\u00B0 C in ${cityName}, ${country}`)
-        	.addFields({ name: 'Maximum Temperature:', value: '${maxTemp}\u00B0 C', inline: true })
-          //  .addFields(`Maximum Temperature:`, `${maxTemp}\u00B0 C`, true)
-            .addFields(`Minimum Temperature:`, `${minTemp}\u00B0 C`, true)
-            .addFields(`Humidity:`, `${humidity} %`, true)
-            .addFields(`Wind Speed:`, `${wind} m/s`, true)
-            .addFields(`Pressure:`, `${pressure} hpa`, true)
-            .addFields(`Cloudiness:`, `${cloudness}`, true)
-            .setFooter('Made With 💖 by @kenepatech');
+                ) =>
+                        new Discord.EmbedBuilder()
+                        .setColor('#0099ff')
+                        .setTitle(`It is ${temp}\u00B0 C in ${cityName}, ${country}`)
+                        .addFields({ name: 'Maximum Temperature:', value: '${maxTemp}\u00B0 C', inline: true })
+                        .addFields({ name: 'Minimum Temperature:', value: '${minTemp}\u00B0 C', inline: true })
+                        .addFields({ name: 'Humidity:', value: '$humidity}', inline: true })
+                        .addFields({ name: 'Wind Speed:', value: '${wind} m/s', inline: true })
+                        .addFields({ name: 'Pressure:', value: '${pressure} hpa', inline: true })
+                        .addFields({ name: 'Cloudiness:', value: '${cloudness} m/s', inline: true })
+                        .setFooter({ text: 'Made With 💖 by @kenepatech', iconURL: 'https://cdn.discordapp.com/attachments/701142788300865666/767141282035662848/kenepa-v2-c-space_grdbg2.png' });
 
 
-        // await interaction.deferReply();    
+        
         const query = interaction.options.get('query').value;
         console.log(query);
 
@@ -70,3 +69,18 @@ module.exports = {
 
     }
 };
+
+
+
+
+  
+           //  .addFields(`Maximum Temperature:`, `${maxTemp}\u00B0 C`, true)
+           // .addFields(`Minimum Temperature:`, `${minTemp}\u00B0 C`, true)
+           //  .addFields(`Humidity:`, `${humidity} %`, true)
+           // .addFields(`Wind Speed:`, `${wind} m/s`, true)
+           // .addFields(`Pressure:`, `${pressure} hpa`, true)
+           // .addFields(`Cloudiness:`, `${cloudness}`, true)
+           // .setFooter('Made With 💖 by @kenepatech');
+
+
+        // await interaction.deferReply();  
