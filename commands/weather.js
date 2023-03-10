@@ -22,7 +22,6 @@ module.exports = {
                 maxTemp,
                 minTemp,
                 pressure,
-                humidity,
                 mood,
                 wind,
                 cloudness,
@@ -60,7 +59,7 @@ module.exports = {
             let pressure = apiData.data.main.pressure;
             let cloudness = apiData.data.weather[0].description;
             let mood = apiData.data.weather[0].main;
-            let weatherinfo = exampleEmbed(currentTemp, maxTemp, minTemp, pressure, humidity, wind, cloudness, icon, cityName, country);
+            let weatherinfo = exampleEmbed(currentTemp, maxTemp, minTemp, pressure, mood, wind, cloudness, icon, cityName, country);
             client.channels.cache.get("579799154449186868").send({
                 embeds: [weatherinfo]
             });
