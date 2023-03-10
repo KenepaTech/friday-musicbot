@@ -23,6 +23,7 @@ module.exports = {
                 minTemp,
                 pressure,
                 humidity,
+                mood,
                 wind,
                 cloudness,
                 icon,
@@ -34,7 +35,7 @@ module.exports = {
                         .setTitle(`It is ${temp}\u00B0 C in ${cityName}, ${country}`)
                         .addFields({ name: 'Maximum Temperature:', value: `${maxTemp}\u00B0 C`, inline: true })
                         .addFields({ name: 'Minimum Temperature:', value: `${minTemp}\u00B0 C`, inline: true })
-                        .addFields({ name: 'Humidity:', value: `${humidity} %`, inline: true })
+                        .addFields({ name: 'Current Forecast:', value: `${mood} %`, inline: true })
                         .addFields({ name: 'Wind Speed:', value: `${wind} m/s`, inline: true })
                         .addFields({ name: 'Pressure:', value: `${pressure} hpa`, inline: true })
                         .addFields({ name: 'Cloudiness:', value: `${cloudness}`, inline: true })
@@ -58,6 +59,7 @@ module.exports = {
             let country = apiData.data.sys.country
             let pressure = apiData.data.main.pressure;
             let cloudness = apiData.data.weather[0].description;
+            let mood = apiData.data.weather[0].main;
             let weatherinfo = exampleEmbed(currentTemp, maxTemp, minTemp, pressure, humidity, wind, cloudness, icon, cityName, country);
             client.channels.cache.get("579799154449186868").send({
                 embeds: [weatherinfo]
