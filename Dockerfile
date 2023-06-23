@@ -6,8 +6,8 @@ FROM node:18 AS build
  RUN npm install
  RUN apt update && \
      apt install -y upx && \
-     upx -1 /ffmpeg
-
+   #  upx -1 /ffmpeg
+     apt install -y ffmpeg 
 
 
 FROM gcr.io/distroless/nodejs18
