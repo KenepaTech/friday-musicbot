@@ -5,7 +5,6 @@ FROM node:18 AS build
  #RUN npm install --package-lock-only
  RUN npm install
  RUN apt update && \
-     apt install -y upx && \
      apt install -y ffmpeg 
 
 
