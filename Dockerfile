@@ -6,7 +6,8 @@ FROM node:18 AS build
  RUN npm install
  RUN apt update && \
      apt install -y ffmpeg 
-
+ RUN npm i @discordjs/opus
+ RUN npm i node-opus
 
 FROM gcr.io/distroless/nodejs18
 WORKDIR /app
