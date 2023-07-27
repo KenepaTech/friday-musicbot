@@ -1,6 +1,6 @@
 const {GuildMember} = require('discord.js')
 const {useQueue} = require('discord-player')
-const {isInVoiceChannel} = require("../utils/voicechannel");
+
 
 module.exports = {
     name: 'skip',
