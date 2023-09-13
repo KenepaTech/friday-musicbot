@@ -1,6 +1,7 @@
 const {GuildMember, ApplicationCommandOptionType } = require('discord.js');
 const {QueryType} = require('discord-player');
-const {isInVoiceChannel} = require("../utils/voicechannel");
+const {isInVoiceChannel} = require("../voicechannel");
+//const {isInVoiceChannel} = require("../utils/voicechannel");
 
 module.exports = {
     name: 'play',
