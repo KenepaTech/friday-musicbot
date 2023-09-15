@@ -2,7 +2,7 @@
 
 [![Docker Image CI](https://github.com/KenepaTech/friday-musicbot/actions/workflows/docker-image.yml/badge.svg)](https://github.com/KenepaTech/friday-musicbot/actions/workflows/docker-image.yml)
 
-## Table of content
+## Table of contentt
 
 * [Requirements](#requirements)
 * [Getting started](#getting-started)
