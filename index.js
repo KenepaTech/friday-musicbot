@@ -95,7 +95,7 @@ client.once("ready", () => {
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
      channel.send("Enjoy the weekend!🫶");
-     channel.send("https://media.giphy.com/media/neIG9cqaAfLmRHXPmJ/giphy.gif")},
+     channel.send("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnlxdTYwd29zaTA5bDVic2ZnenpzN2kwdTk0eHZ2ZG9mOTdhZDF0OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3JZ6Y8LxAr1Cn6Hutt/giphy.gif")},
           null,true,
           "Europe/Amsterdam");
     // When you want to start it, use:
