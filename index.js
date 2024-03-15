@@ -94,8 +94,8 @@ client.once("ready", () => {
      let scheduledMessage = new cron.CronJob('00 17 * * 5 ', () => {
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
-     channel.send("Happy friday!🫶");
-     channel.send("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmJjcm1wZm53aTBzMXRnaW1mdGFmNzNlMXV3ZDNkcnZtM2YxZWszdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kfXKerAin4UauE9ZEA/giphy-downsized-large.gif")},
+     channel.send("Enjoy the weekend!!!🤸🌻");
+     channel.send("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2cxeHdjMjQydGZ3bTJ5enEyeWc3MWU2aXJyamlrMGJzMjRydm81eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5K7ngCtszoxxbaBieC/giphy.gif")},
           null,true,
           "Europe/Amsterdam");
     // When you want to start it, use:
