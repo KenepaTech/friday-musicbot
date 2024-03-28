@@ -85,6 +85,16 @@ player.events.on('playerError', (queue, error) => {
 
 client.on('ready', function () {
     console.log('Ready!');
+     let scheduledMessage = new cron.CronJob('00 17 * * 5 ', () => {
+     const guild = client.guilds.cache.get('579799154449186865');
+     const channel = guild.channels.cache.get('579799154449186868');
+     channel.send("Enjoy the weekend!!!🤸🌻");
+     channel.send("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDRwY3Y2eGdvY3M5NG56ZW84ZHJjbTQwcnlnbnBvZTAzaHducm1mMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OOn7N4CfPuUTmNqFD7/giphy.gif")},
+          null,true,
+          "Europe/Amsterdam");
+    // When you want to start it, use:
+    scheduledMessage.start()
+
     client.user.presence.set({
         activities: [{name: config.activity, type: Number(config.activityType)}],
         status: Discord.Status.Ready,
