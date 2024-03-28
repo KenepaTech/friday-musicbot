@@ -27,7 +27,7 @@
     "opusscript": "0.0.8",
     "prism-media": "^1.3.5",
     "ytdl-core": "^4.11.5",
-    "cron": "^1.8.2",
+    "cron": "^1.8.2"
   },
   "devDependencies": {
     "prettier": "3.0.2"
