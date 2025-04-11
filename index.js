@@ -89,7 +89,7 @@ client.on('ready', function () {
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
      channel.send("Fun fact! 🦭Octopuses have three hearts — and two of them actually stop beating when they swim. 🐙💔💔💓!");
-     channel.send("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3QybnA3bHBlbXQ0ZngwcW92d3p2cXBkdWQ5MGt0M2Z4cjJmazIwMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Zn3w8mNyo13mE/giphy.gif")},
+     channel.send("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWFxOWFhaXppZjR3ZDBqc2R2eGYzcDkyY2NqdDMzcXhvbTM2bWVqNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wRZgFsaKNdKvqf38fj/giphy.gif")},
           null,true,
           "Europe/Amsterdam");
     // When you want to start it, use:
