@@ -88,8 +88,8 @@ client.on('ready', function () {
      let scheduledMessage = new cron.CronJob('00 17 * * 5 ', () => {
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
-     channel.send("🦭Did you know only male Narwahls have the tusk? Wild. Anyway, enjoy y'alls weekend!🍢");
-     channel.send("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDFuN3RrZm9ieXdhYmdxOXkxdG8xdDVkN2l6MGRmbWoxbHZyNDJ3biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ewcYP3r06ziwxcsJia/giphy.gif")},
+     channel.send("Fun fact! 🦭Octopuses have three hearts — and two of them actually stop beating when they swim. 🐙💔💔💓!");
+     channel.send("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3QybnA3bHBlbXQ0ZngwcW92d3p2cXBkdWQ5MGt0M2Z4cjJmazIwMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Zn3w8mNyo13mE/giphy.gif")},
           null,true,
           "Europe/Amsterdam");
     // When you want to start it, use:
