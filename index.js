@@ -88,8 +88,8 @@ client.on('ready', function () {
      let scheduledMessage = new cron.CronJob('00 17 * * 5 ', () => {
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
-     channel.send("🗼🗼FUN FACT: The Eiffel Tower can actually grow up to 15 cm taller in the summer due to thermal expansion!!🗼");
-     channel.send("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXVodGwwM3NsNXYyenFnc2JwcmdvN3d3aTQxY2J1a3JnYjNnb2NwbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26hisNbqTHrCduoWQ/giphy.gif")},
+     channel.send("🍓🍌FUN FACT: Bananas Are Berries, But Strawberries Aren't!🍌🍓 What even. Enjoy the hot-🍑 weekend! ");
+     channel.send("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXNvdmZneDFqYmFra2Zvemd0Y3RmdXRod3hudmtnNHl0dDNrYnV1YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UrmnynT4meYcc4URmA/giphy.gif")},
           null,true,
           "Europe/Amsterdam");
     // When you want to start it, use:
