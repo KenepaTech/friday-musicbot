@@ -88,8 +88,8 @@ client.on('ready', function () {
      let scheduledMessage = new cron.CronJob('00 17 * * 5 ', () => {
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
-     channel.send("🍓🍌FUN FACT: Bananas Are Berries, But Strawberries Aren't!🍌🍓 What even. Enjoy the hot-🍑 weekend! ");
-     channel.send("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXNvdmZneDFqYmFra2Zvemd0Y3RmdXRod3hudmtnNHl0dDNrYnV1YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UrmnynT4meYcc4URmA/giphy.gif")},
+     channel.send("🐨💩FUN FACT: Wombat poop is cube-shaped, which means they're the only animals that could potentially build a poop pyramid.💩🐨 Dushi Wikent! ");
+     channel.send("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnRuc2M4Nzh6dDFqczY4cTVteWJpMDg2MjI0cnp3NWFjZ2doNWM1cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qdosPqAZvNoOen4BEb/giphy.gif")},
           null,true,
           "Europe/Amsterdam");
     // When you want to start it, use:
