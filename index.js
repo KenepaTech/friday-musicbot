@@ -88,7 +88,7 @@ client.on('ready', function () {
      let scheduledMessage = new cron.CronJob('00 17 * * 5 ', () => {
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
-     channel.send("😿🍬FUN FACT: Cats don’t have a sweet tooth because they lack taste buds for sweetness—a tragedy in the feline dessert world.🍬😿 Enjoy the weekend!");
+     channel.send("😿🍬FUN FACT: Cats don’t have a sweet tooth because they lack taste buds for sweetness—a tragedy in the feline dessert world.🍬😿 Enjoy the weekend!!");
      channel.send("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExN29yamc4b3dnd2RwenZzOXY5dDE5OWtjZXZybzI0azg1NHdsNWF0eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6Zt2JJcBEO6xdw8E/giphy.gif")},
           null,true,
           "Europe/Amsterdam");
