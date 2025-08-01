@@ -88,8 +88,8 @@ client.on('ready', function () {
      let scheduledMessage = new cron.CronJob('00 17 * * 5 ', () => {
      const guild = client.guilds.cache.get('579799154449186865');
      const channel = guild.channels.cache.get('579799154449186868');
-     channel.send("🦍💃FUN FACT: The word “gorilla” is derived from a Greek word meaning “a tribe of hairy women.”💃🦍 Enjoy the weekend!!");
-     channel.send("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2kwenZtanB6OHhpbG5heHZnc2t0cThsdm9vc3gzZ2gydGtodGVxcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lqFY9hBTLX7os/giphy.gif")},
+     channel.send("🚽FUN FACT: Approximately 40,000 Americans are injured annually due to toilets.🚽 Enjoy y'alls weekend!!");
+     channel.send("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3h0dHpocDh5dTh1bmliaWdwNmEzam1ldWRrempqMXM5ZHBuOXQ1biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0IsHsQK0O7u2d1Cg/giphy.gif")},
           null,true,
           "Europe/Amsterdam");
     // When you want to start it, use:
